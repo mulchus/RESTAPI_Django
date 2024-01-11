@@ -1,16 +1,21 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# туториал - https://yandex.ru/video/preview/8858384623772885105
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# def parse_json_lines(filename: str):
+#     output = []
+#     with open(filename, "r", encoding="utf-8") as f:
+#         for line in f:
+#             output.append(json.loads(line))
+#     return output
+
+
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# if __name__ == '__main__':
+#     print_hi('PyCharm')
+#     print(parse_json_lines("data.json"))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

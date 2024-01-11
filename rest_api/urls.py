@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from apps.views import ImageView, AnnotationView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('images/', ImageView.as_view(), name="image"),
+    path('annotations/<uuid:uuid>', AnnotationView.as_view(), name="export-annotation"),
 ]
