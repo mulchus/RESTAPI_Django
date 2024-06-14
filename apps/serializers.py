@@ -11,5 +11,5 @@ class AnnotationSerializer(serializers.ModelSerializer):
 class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Image
-        fields = ["file", ]
+        fields = ["image", ]
         

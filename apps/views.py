@@ -13,8 +13,8 @@ class AnnotationView(generics.CreateAPIView, generics.RetrieveUpdateAPIView):
     serializer_class = AnnotationSerializer
     
     def get_queryset(self):
-        uid_image = self.kwargs["uid_image"]
-        return Annotation.objects.filter(image__id=uid_image)
+        uuid = self.kwargs["uuid"]
+        return Annotation.objects.filter(uid=uuid)
     
     def get_object(self):
         qs = self.get_queryset()
